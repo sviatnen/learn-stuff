@@ -1,0 +1,24 @@
+function palindrome(str) {
+  // Good luck!
+  myStr = str.toLowerCase()
+             .replace(/\s/gi,"")
+             .replace(/,/gi,"")
+             .replace(/[.]/gi,"")
+             .replace(/:/gi,"")
+             .replace(/[/]/gi,"")
+             .replace(/[-]/gi,"")
+             .replace(/[_]/gi,"")
+             .replace(/[(]/gi,"")
+             .replace(/[)]/gi,"");
+  myArray = myStr.split("").reverse();
+  myStr2 = myArray.join('');
+  
+  if (myStr==myStr2)
+  return true;
+  else
+    return false;
+}
+
+
+
+palindrome("0_0 (: /-\ :) 0-0");
