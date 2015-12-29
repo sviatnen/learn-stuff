@@ -1,0 +1,11 @@
+function repeat(str, num) {
+  // repeat after me
+  var str2="";
+  for (i=0;i<num;i++){
+    str2 += str;
+  }
+  
+  return str2;
+}
+
+repeat("abc", 3);
